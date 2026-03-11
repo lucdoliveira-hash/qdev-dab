@@ -4,7 +4,7 @@ def checkWithdrawal(balance, amount):
   return False
 
 class Account:
-  def __init__(self, number, client, initial_balance):
+  def __init__(self, number, client="", initial_balance=0.0):
     self.number = number
     self.client = client
     self.balance = initial_balance
