@@ -17,11 +17,13 @@ except ValueError:
   sys.exit(1)
 
 account = bank[account]
-operation = int(input("How can we help you today? (type '0' to show your current balance, '-amount' to withdraw <amount> € or '+amount' to deposit <amount> €) "))
 
-if operation == 0:
-  print(account)
-elif operation > 0:
+print(f"Hello {account.client}!")
+print(account)
+
+operation = float(input("How can we help you today? (type '-amount' to withdraw <amount> € or '+amount' to deposit <amount> €) "))
+
+if operation > 0:
   account.deposit(operation)
 elif operation < 0:
   account.withdraw(operation)
