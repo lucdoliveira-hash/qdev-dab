@@ -10,7 +10,7 @@ class Account:
     self.balance = initial_balance
 
   def __str__(self):
-    return f"Account {self.number}:\n  - holder: {self.client}\n  - balance: {self.balance}\n"
+    return f"Your current balance is {self.balance} €.\n"
 
   def __eq__(self, other):
     if self.number == other:
