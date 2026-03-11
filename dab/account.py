@@ -1,3 +1,6 @@
+def checkWithdrawal(balance, amount):
+  return False
+
 class Account:
   def __init__(self, number, client, initial_balance):
     self.number = number
